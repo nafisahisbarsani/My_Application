@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtprisma"
+        android:text="Prism"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:fontFamily="@font/poppinssemibold"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="380dp"
+        android:layout_height="230dp"
+        android:id="@+id/cardrumusprisma"
+        android:layout_gravity="center"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        android:padding="4dp"
+
+        >
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@drawable/prisma"
+
+            />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="380dp"
+        android:layout_height="200dp"
+        android:id="@+id/rumusluaspermukaanprisma"
+        android:layout_gravity="center"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        android:padding="4dp"
+        android:layout_margin="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="surface area of prisma"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:fontFamily="@font/poppinssemibold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bp x h + 2 x ba"
+            android:layout_gravity="center"
+            android:textSize="38dp"
+            android:textStyle="bold"
+            android:padding="6dp"
+            android:fontFamily="@font/poppinssemibold"
+            />
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="380dp"
+        android:layout_height="200dp"
+        android:id="@+id/rumusvolumeprisma"
+        android:layout_gravity="center"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        android:padding="4dp"
+        android:layout_margin="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="volume"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:fontFamily="@font/poppinssemibold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ba x h"
+            android:layout_gravity="center"
+            android:textSize="38dp"
+            android:textStyle="bold"
+            android:padding="6dp"
+            android:fontFamily="@font/poppinssemibold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bp: base perimeter  ba: base area  h: height"
+            android:layout_gravity="center|bottom"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:padding="6dp"
+            android:fontFamily="@font/poppinssemibold"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</LinearLayout>

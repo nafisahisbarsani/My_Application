@@ -1,0 +1,8 @@
+<!-- res/drawable/rounded_button_border.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="8dp" /> <!-- Mengatur sudut melengkung -->
+    <solid android:color="#1E88E5" /> <!-- Ubah warna latar belakang menjadi biru -->
+    <stroke
+        android:width="2dp"
+        android:color="#000000"/> <!-- Ubah warna border menjadi hitam -->
+</shape>
