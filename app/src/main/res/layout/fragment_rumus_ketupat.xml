@@ -7,8 +7,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/txtkubus"
-        android:text="Cube"
+        android:id="@+id/txtketupat"
+        android:text="Rhombus"
         android:textSize="24dp"
         android:textStyle="bold"
         android:layout_gravity="center"
@@ -17,8 +17,8 @@
         />
     <androidx.cardview.widget.CardView
         android:layout_width="380dp"
-        android:layout_height="230dp"
-        android:id="@+id/cardrumuskubus"
+        android:layout_height="200dp"
+        android:id="@+id/cardrumusketupat"
         android:layout_gravity="center"
         app:cardCornerRadius="20dp"
         app:cardElevation="8dp"
@@ -29,19 +29,68 @@
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_gravity="center"
-            android:src="@drawable/cube"
+            android:src="@drawable/ketupat"
 
             />
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
         android:layout_width="380dp"
         android:layout_height="200dp"
-        android:id="@+id/rumusluaspermukaanbalok"
+        android:id="@+id/rumuskelilingketupat"
         android:layout_gravity="center"
         app:cardCornerRadius="20dp"
         app:cardElevation="8dp"
         android:padding="4dp"
-        android:layout_margin="10dp"
+        android:layout_margin="20dp"
+        >
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+      android:orientation="vertical"
+      >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="perimeter of rhombus"
+          android:layout_gravity="center_horizontal"
+          android:textSize="18dp"
+          android:textStyle="bold"
+          android:padding="8dp"
+          android:fontFamily="@font/poppinssemibold"
+          />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="4 x s"
+          android:layout_gravity="center"
+          android:textSize="38dp"
+          android:layout_margin="16dp"
+          android:textStyle="bold"
+          android:padding="6dp"
+          android:fontFamily="@font/poppinssemibold"
+          />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="d : diagonal"
+          android:layout_gravity="center|bottom"
+          android:textSize="18dp"
+          android:textStyle="bold"
+          android:padding="2dp"
+          android:fontFamily="@font/poppinssemibold"
+          />
+
+  </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="380dp"
+        android:layout_height="200dp"
+        android:id="@+id/rumusluasketupat"
+        android:layout_gravity="center"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        android:padding="4dp"
+        android:layout_margin="20dp"
         >
         <LinearLayout
             android:layout_width="match_parent"
@@ -51,7 +100,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="surface area of cuboid"
+                android:text="area of rhombus"
                 android:layout_gravity="center_horizontal"
                 android:textSize="18dp"
                 android:textStyle="bold"
@@ -61,61 +110,22 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="6 x (side length)²"
+                android:text="d¹ x d²/2"
                 android:layout_gravity="center"
                 android:textSize="38dp"
                 android:textStyle="bold"
                 android:padding="6dp"
                 android:fontFamily="@font/poppinssemibold"
                 />
-
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:text="calculate"
                 android:fontFamily="@font/poppinssemibold"
-                android:id="@+id/btnKubus"
+                android:id="@+id/btnKetupat"
                 android:background="@drawable/button"
                 />
         </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:layout_width="380dp"
-        android:layout_height="200dp"
-        android:id="@+id/rumusvolumebalok"
-        android:layout_gravity="center"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="8dp"
-        android:padding="4dp"
-        android:layout_margin="10dp"
-        >
-       <LinearLayout
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:orientation="vertical"
-           >
-           <TextView
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:text="volume"
-               android:layout_gravity="center_horizontal"
-               android:textSize="18dp"
-               android:textStyle="bold"
-               android:padding="8dp"
-               android:fontFamily="@font/poppinssemibold"
-               />
-           <TextView
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:text="(side length)³"
-               android:layout_gravity="center"
-               android:textSize="38dp"
-               android:textStyle="bold"
-               android:padding="6dp"
-               android:fontFamily="@font/poppinssemibold"
-               />
-       </LinearLayout>
     </androidx.cardview.widget.CardView>
 </LinearLayout>

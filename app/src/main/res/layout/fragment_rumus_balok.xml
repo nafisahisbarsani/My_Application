@@ -41,28 +41,44 @@
         app:cardCornerRadius="20dp"
         app:cardElevation="8dp"
         android:padding="4dp"
-        android:layout_margin="20dp"
+        android:layout_margin="10dp"
         >
-        <TextView
-            android:layout_width="wrap_content"
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="surface area of cuboid"
-            android:layout_gravity="center_horizontal"
-            android:textSize="18dp"
-            android:textStyle="bold"
-            android:padding="8dp"
-            android:fontFamily="@font/poppinssemibold"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="2 x (l x w + l x h + h x w)"
-            android:layout_gravity="center"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:padding="6dp"
-            android:fontFamily="@font/poppinssemibold"
-            />
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/poppinssemibold"
+                android:padding="8dp"
+                android:text="surface area of cuboid"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:padding="6dp"
+                android:text="2 x (l x w + l x h + h x w)"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnBalok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/button"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="calculate" />
+        </LinearLayout>
 
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
@@ -73,7 +89,7 @@
         app:cardCornerRadius="20dp"
         app:cardElevation="8dp"
         android:padding="4dp"
-        android:layout_margin="20dp"
+       android:layout_margin="10dp"
         >
         <TextView
             android:layout_width="wrap_content"
@@ -106,9 +122,4 @@
             android:fontFamily="@font/poppinssemibold"
             />
     </androidx.cardview.widget.CardView>
-
-
-
-
-
 </LinearLayout>

@@ -4,9 +4,11 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.example.geometri.R;
 
@@ -22,9 +24,28 @@ public class FragmentRumusSegitiga extends Fragment {
             formulaTextView.setText(formula);
         }
 
+        Button btnSegitiga = view.findViewById(R.id.btnSegitiga);
+        btnSegitiga.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openHitungLuasFragment();
+            }
+        });
+
         return view;
     }
+
+    private void openHitungLuasFragment() {
+        FragmentCalculateSegitiga fragment= new FragmentCalculateSegitiga();
+        FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
+        transaction.replace(R.id.container, fragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
+    }
 }
+
+
+
 
 
 

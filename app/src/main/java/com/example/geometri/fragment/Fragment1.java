@@ -34,7 +34,7 @@ public class Fragment1 extends Fragment {
         panjagCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openFragment(new FragmentRumusPersegiPanjang());
+                openFragment(new FragmentRumusPanjang());
             }
         });
 
@@ -59,6 +59,13 @@ public class Fragment1 extends Fragment {
             @Override
             public void onClick(View v) {
                 openFragment(new FragmentRumusJajar());
+            }
+        });
+        CardView ketupatCard = view.findViewById(R.id.cvketupat);
+        ketupatCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openFragment(new FragmentRumusKetupat());
             }
         });
         return view;

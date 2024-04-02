@@ -7,8 +7,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/txtpersegi"
-        android:text="Square"
+        android:id="@+id/txttabung"
+        android:text="Cylinder"
         android:textSize="24dp"
         android:textStyle="bold"
         android:layout_gravity="center"
@@ -17,8 +17,8 @@
         />
     <androidx.cardview.widget.CardView
         android:layout_width="380dp"
-        android:layout_height="200dp"
-        android:id="@+id/cardrumuspersegi"
+        android:layout_height="220dp"
+        android:id="@+id/cardrumustabung"
         android:layout_gravity="center"
         app:cardCornerRadius="20dp"
         app:cardElevation="8dp"
@@ -29,62 +29,14 @@
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_gravity="center"
-            android:src="@drawable/persegi"
+            android:src="@drawable/tabung"
 
             />
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
         android:layout_width="380dp"
-        android:layout_height="200dp"
-        android:id="@+id/rumuskelilingpersegi"
-        android:layout_gravity="center"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="8dp"
-        android:padding="4dp"
-        android:layout_margin="20dp"
-        >
-      <LinearLayout
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:orientation="vertical"
-          >
-          <TextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="perimeter of square"
-              android:layout_gravity="center_horizontal"
-              android:textSize="18dp"
-              android:textStyle="bold"
-              android:padding="8dp"
-              android:fontFamily="@font/poppinssemibold"
-              />
-          <TextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="4 x s"
-              android:layout_gravity="center"
-              android:textSize="38dp"
-              android:textStyle="bold"
-              android:padding="6dp"
-              android:fontFamily="@font/poppinssemibold"
-              />
-          <TextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="s : side length"
-              android:layout_gravity="center|bottom"
-              android:textSize="18dp"
-              android:textStyle="bold"
-              android:padding="6dp"
-              android:fontFamily="@font/poppinssemibold"
-              />
-      </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:layout_width="380dp"
-        android:layout_height="200dp"
-        android:id="@+id/rumusluaspersegi"
+        android:layout_height="198dp"
+        android:id="@+id/rumusluaspermukaantabung"
         android:layout_gravity="center"
         app:cardCornerRadius="20dp"
         app:cardElevation="8dp"
@@ -98,7 +50,7 @@
            <TextView
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
-               android:text="area of square"
+               android:text="surface area of cylinder"
                android:layout_gravity="center_horizontal"
                android:textSize="18dp"
                android:textStyle="bold"
@@ -108,7 +60,7 @@
            <TextView
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
-               android:text="s x s"
+               android:text="2₶r² + 2₶rh"
                android:layout_gravity="center"
                android:textSize="38dp"
                android:textStyle="bold"
@@ -121,9 +73,56 @@
                android:layout_gravity="center_horizontal"
                android:text="calculate"
                android:fontFamily="@font/poppinssemibold"
-               android:id="@+id/btnPersegi"
+               android:id="@+id/btnTabung"
                android:background="@drawable/button"
                android:padding="2dp"
+               />
+       </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="380dp"
+        android:layout_height="200dp"
+        android:id="@+id/rumusvolumebalok"
+        android:layout_gravity="center"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        android:padding="4dp"
+
+        >
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="volume"
+               android:layout_gravity="center_horizontal"
+               android:textSize="18dp"
+               android:textStyle="bold"
+               android:padding="8dp"
+               android:fontFamily="@font/poppinssemibold"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="₶ r² h"
+               android:layout_gravity="center"
+               android:textSize="38dp"
+               android:textStyle="bold"
+               android:padding="6dp"
+               android:fontFamily="@font/poppinssemibold"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="₶ : pi        r : radius     h: height"
+               android:layout_gravity="bottom|center"
+               android:textSize="20dp"
+               android:textStyle="bold"
+               android:padding="6dp"
+               android:fontFamily="@font/poppinssemibold"
                />
        </LinearLayout>
     </androidx.cardview.widget.CardView>

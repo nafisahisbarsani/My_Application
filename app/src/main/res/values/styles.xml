@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button</item> <!-- Menggunakan drawable untuk background -->
+        <item name="android:textColor">#FFFFFF</item> <!-- Mengatur warna teks -->
+        <item name="android:textSize">16sp</item> <!-- Mengatur ukuran teks -->
+    </style>
+
+</resources>

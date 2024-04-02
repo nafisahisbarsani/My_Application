@@ -53,11 +53,18 @@ public class Fragment2 extends Fragment {
             }
         });
 
-        CardView prismaSegitigaCard = view.findViewById(R.id.cvPrisma);
-        prismaSegitigaCard.setOnClickListener(new View.OnClickListener() {
+        CardView limasCard = view.findViewById(R.id.cvPrisma);
+        limasCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openFragment(new FragmentRumusPrismaSegitiga());
+                openFragment(new FragmentRumusLimas());
+            }
+        });
+        CardView tabungCard = view.findViewById(R.id.cvTabung);
+        tabungCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openFragment(new FragmentRumusTabung());
             }
         });
         return view;

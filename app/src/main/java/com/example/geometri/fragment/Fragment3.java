@@ -23,7 +23,6 @@ public class Fragment3 extends Fragment {
         logoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Tampilkan toast "You are logged out"
                 Toast.makeText(getActivity(), "You are logged out", Toast.LENGTH_SHORT).show();
             }
         });

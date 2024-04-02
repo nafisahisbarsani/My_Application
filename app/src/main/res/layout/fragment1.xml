@@ -134,7 +134,7 @@
                <TextView
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
-                   android:text="triangel"
+                   android:text="triangle"
                    android:textStyle="bold"
                    android:textAlignment="center"
                    android:fontFamily="@font/poppinssemibold"
@@ -212,6 +212,7 @@
            </LinearLayout>
        </androidx.cardview.widget.CardView>
        <androidx.cardview.widget.CardView
+           android:id="@+id/cvketupat"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:layout_row="2"
@@ -233,18 +234,17 @@
                <ImageView
                    android:layout_width="80dp"
                    android:layout_height="80dp"
-                   android:src="@drawable/calculate"
+                   android:src="@drawable/ketupat"
                    />
                <TextView
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
-                   android:text="calculate"
+                   android:text="rhombus"
                    android:textStyle="bold"
                    android:textAlignment="center"
                    android:fontFamily="@font/poppinssemibold"
                    />
            </LinearLayout>
        </androidx.cardview.widget.CardView>
-
    </GridLayout>
 </RelativeLayout>

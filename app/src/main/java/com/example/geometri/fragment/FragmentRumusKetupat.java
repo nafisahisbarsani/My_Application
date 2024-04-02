@@ -12,20 +12,19 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.example.geometri.R;
 
-public class FragmentRumusKubus extends Fragment {
-    @Override
+public class FragmentRumusKetupat extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_rumus_kubus, container, false);
+        View view = inflater.inflate(R.layout.fragment_rumus_ketupat, container, false);
 
-        TextView formulaTextView = view.findViewById(R.id.txtkubus);
+        TextView formulaTextView = view.findViewById(R.id.txtketupat);
         if (getArguments() != null) {
             String formula = getArguments().getString("formula", "");
             formulaTextView.setText(formula);
         }
 
-        Button btnKubus = view.findViewById(R.id.btnKubus);
-        btnKubus.setOnClickListener(new View.OnClickListener() {
+        Button btnKetupat = view.findViewById(R.id.btnKetupat);
+        btnKetupat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openHitungLuasFragment();
@@ -36,11 +35,10 @@ public class FragmentRumusKubus extends Fragment {
     }
 
     private void openHitungLuasFragment() {
-        FragmentCalculateKubus fragment= new FragmentCalculateKubus();
+        FragmentCalculateKetupat fragment = new FragmentCalculateKetupat();
         FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
         transaction.replace(R.id.container, fragment);
         transaction.addToBackStack(null);
         transaction.commit();
     }
 }
-
